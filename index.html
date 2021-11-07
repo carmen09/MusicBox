@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Project3</title>
+  <link rel="stylesheet" type="text/css" href="./project.css">
+ <!-- add jquery library-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer>
+</script> 
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="./project.js" defer></script>
+    <title>Project4</title>
+  </head>
+
+<body>
+<div class="content">
+ 
+  <div class="music-box">
+    <center>
+      <h1>
+       Music Box 
+      </h1>
+    </center>
+  
+
+<center>
+<div id="myDIV">
+</div></center>
+
+    <!-- <div class="wrap">
+      <button class="btn">　<img src="./assert/eye.png" height="200" width="200" >
+      </button>
+      
+      <div class="content myText">Braille is a code. It is a system of reading and writing a specific language without the use
+        of sight. Braille enables people with blindness and visual impairments to read through touch.
+        Though Louis Braille created the tactile reading and writing system we use today, he drew inspiration from a
+        French army captain named Charles Barbier who developed a similar code. Barbier created a nonverbal
+        communication system so his officers could read battle commands during the night without the use of candlelight.
+        In the late 1800s, Louis Braille refined Barbier's system and created the foundation for today's braille code.
+        Thankfully braille is a code and not a language. Because it's a code, we can transcribe braille into several
+        dialects including English, Spanish, French, German, and Italian.</div>
+    </div> -->
+    <audio id="myAudio" style="display: none;" controls>
+      <!-- <source src="/i/horse.ogg" type="audio/ogg"> -->
+      <source src="./assert/do,re/do.wav" type="audio/mpeg">
+      <source src="./assert/do,re/re.wav" type="audio/mpeg">
+      <source src="./assert/do,re/mi.wav" type="audio/mpeg">
+      <source src="./assert/do,re/fa.wav" type="audio/mpeg">
+      <source src="./assert/do,re/so.wav" type="audio/mpeg">
+      <source src="./assert/do,re/la.wav" type="audio/mpeg">
+      <source src="./assert/do,re/si.wav" type="audio/mpeg">
+    </audio>
+
+
+    <div id="divimg">
+      <img id="currentKey" src="" />
+
+
+    </div>
+
+
+    <div id="divbig" class="divout">
+      <ul class="music-keys">
+        <li id="A">
+          <span>Do</span>
+        </li>
+        <li id="B">
+          <span>Re</span>
+        </li>
+        <li id="C">
+          <span>Mi</span>
+        </li>
+        <li id="D">
+          <span>Fa</span>
+        </li>
+        <li id="E">
+          <span>So</span>
+        </li>
+        <li id="F">
+          <span>La</span>
+        </li>
+        <li id="G">
+          <span>Si</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+ 
+</div>
+<div id="divtitle" class="elastic-layer close">
+  <center><p class="login-panel">
+    There are lots of types of blindness. This is the version from the low vision group people. 
+  </p></center>
+</div>
+
+</body>
+<script type="text/javascript">
+  var curimg = document.getElementById("currentKey");
+  curimg.style.display = "none";
+</script>
+
+</html>
