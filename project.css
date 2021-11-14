@@ -4,11 +4,13 @@ html, *{
 @font-face {
   font-family: "OpenSans";
   src: url(./assert/OpenSans.ttf);
+ 
 }
 
 @font-face {
   font-family: "OpenSans-Regular.ttf";
   src: url(./assert/Open_Sans/OpenSans-Regular.ttf);
+  background-color: antiquewhite;
 }
 body {
   margin:0;
@@ -16,7 +18,7 @@ body {
   
 }
 .music-box{
-  background-color: #fff1d2;
+  background-color: black;
   border-style:solid;
   width: 100%;
 	border-width:10px;
@@ -36,7 +38,8 @@ body {
 
 h1{
   font-family: OpenSans;
-  font-size: 4rem;
+  font-size: 6rem;
+  color:#5CE1FF;
 
 }
 
@@ -59,7 +62,7 @@ h1{
 .music-keys li{
   height: 300px;
   width: calc(100%/7);
-  border: 3px solid #00BFFF;
+  border: 3px solid #F8D210;
   font-family: "OpenSans-Regular.ttf";
   font-size: 24px;
 }
@@ -85,7 +88,7 @@ text-align: center;
   color: #00BFFF;
 font-family: OpenSans;
 line-height: 300px;
--webkit-text-stroke: 1px black;
+-webkit-text-stroke: 3px white;
 }
 
 

@@ -325,7 +325,7 @@ document.onkeydown=function(event){
     function setcurrent(id)
     {
       var cur = document.getElementById(id);
-      cur.style.backgroundColor="Black";
+      cur.style.backgroundColor="#B9B7BD";
       cur.style.color="White";
     }
   
