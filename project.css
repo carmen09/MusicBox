@@ -17,8 +17,22 @@ body {
   
   
 }
+
+.play{
+  border: 3px solid #F8D210;
+  padding: 10px 40px;
+  background: pink;
+  border-radius: 20px;
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+  font-family: "OpenSans";
+
+  
+}
+  
 .music-box{
-  background-color: black;
+  background-image: linear-gradient(#FFE985, #FA742B );
   border-style:solid;
   width: 100%;
 	border-width:10px;
@@ -27,20 +41,22 @@ body {
   /* cancel */
 }
 
+
 .music-box_black{
   background-color: #C0C0C0;
-  border-style:solid;
+  border-style:solid 1px ;
   width: 100%;
 	border-width:5px;
   height: 100vh;
 
+
 }
 
 h1{
-  font-family: OpenSans;
+  font-family: Russo One;
   font-size: 6rem;
   color:#5CE1FF;
-
+  text-shadow: 0 0 10px #FF0000, 0 0 10px #6bf403; 
 }
 
 
