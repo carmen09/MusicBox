@@ -1,5 +1,18 @@
 //const { domainToUnicode } = require("url");
 
+var arrs=[];
+
+function play()
+{
+  if(arrs != null && arrs.length > 0)
+  {
+    window.localStorage.setItem("arr",arrs);
+    window.location.href="play.html";
+  }
+  else{
+  alert("当前没有按下任何键");}
+}
+
 //键盘事件从字母A开始
 document.onkeydown=function(event){
   var au = document.getElementById("myAudio");
@@ -15,7 +28,8 @@ document.onkeydown=function(event){
             au.setAttribute("src","./assert/do,re/do.wav");  //设置需要读取的音频文件
             au.play();  //播放
             var imgcurr = document.getElementById("currentKey");
-           
+           arrs.push("do.wav");
+       
           }
           if(e && e.keyCode==66){ // 按 B
             setcolor();
@@ -25,7 +39,7 @@ document.onkeydown=function(event){
             au.setAttribute("src","./assert/do,re/re.wav");
             au.play();
             var imgcurr = document.getElementById("currentKey");
-         
+            arrs.push("re.wav");
   
       }
           if(e && e.keyCode==67){ // 按 C
@@ -37,7 +51,7 @@ document.onkeydown=function(event){
             au.setAttribute("src","./assert/do,re/mi.wav");
             au.play();
             var imgcurr = document.getElementById("currentKey");
-         
+            arrs.push("mi.wav");
           }
           if(e && e.keyCode==68){ // 按 D
             setcolor();
@@ -48,7 +62,7 @@ document.onkeydown=function(event){
             au.setAttribute("src","./assert/do,re/fa.wav");
             au.play();
             var imgcurr = document.getElementById("currentKey");
-          
+            arrs.push("fa.wav");
             }
 
             if(e && e.keyCode==69){ // 按 E
@@ -60,7 +74,7 @@ document.onkeydown=function(event){
               au.setAttribute("src","./assert/do,re/so.wav");
               au.play();
               var imgcurr = document.getElementById("currentKey");
-
+              arrs.push("so.wav");
             }
 
 
@@ -73,7 +87,7 @@ document.onkeydown=function(event){
               au.setAttribute("src","./assert/do,re/la.wav");
               au.play();
               var imgcurr = document.getElementById("currentKey");
-           
+              arrs.push("la.wav");
             }
             if(e && e.keyCode==71){ // 按 G
               setcolor();
@@ -84,7 +98,7 @@ document.onkeydown=function(event){
               au.setAttribute("src","./assert/do,re/si.wav");
               au.play();
               var imgcurr = document.getElementById("currentKey");
-             
+              arrs.push("si.wav");
             }
             if(e && e.keyCode==72){ // 按 H
               //要做的事情
@@ -94,7 +108,7 @@ document.onkeydown=function(event){
               au.setAttribute("src","./assert/do,re/do.wav");  //设置需要读取的音频文件
               au.play();  //播放
               var imgcurr = document.getElementById("currentKey");
-             
+              arrs.push("do.wav");
             }
 
             if(e && e.keyCode==73){ // 按 I
@@ -105,8 +119,8 @@ document.onkeydown=function(event){
               au.setAttribute("src","./assert/do,re/re.wav");
               au.play();
               var imgcurr = document.getElementById("currentKey");
-          
-    
+              arrs.push("re.wav");
+              
         }
         if(e && e.keyCode==74){ // 按 J
           setcolor();
@@ -117,7 +131,7 @@ document.onkeydown=function(event){
           au.setAttribute("src","./assert/do,re/mi.wav");
           au.play();
           var imgcurr = document.getElementById("currentKey");
-         
+          arrs.push("mi.wav");
         }
 
         if(e && e.keyCode==75){ // 按 K
@@ -129,7 +143,7 @@ document.onkeydown=function(event){
           au.setAttribute("src","./assert/do,re/fa.wav");
           au.play();
           var imgcurr = document.getElementById("currentKey");
-        
+          arrs.push("fa.wav");
         }
 
 
@@ -142,7 +156,7 @@ document.onkeydown=function(event){
           au.setAttribute("src","./assert/do,re/so.wav");
           au.play();
           var imgcurr = document.getElementById("currentKey");
-         
+          arrs.push("so.wav");
         }
 
 
@@ -155,7 +169,7 @@ document.onkeydown=function(event){
           au.setAttribute("src","./assert/do,re/la.wav");
           au.play();
           var imgcurr = document.getElementById("currentKey");
-  
+          arrs.push("la.wav");
         }
         if(e && e.keyCode==78){ // 按 N
           setcolor();
@@ -166,7 +180,7 @@ document.onkeydown=function(event){
           au.setAttribute("src","./assert/do,re/si.wav");
           au.play();
           var imgcurr = document.getElementById("currentKey");
-     
+          arrs.push("si.wav");
         }
 
         if(e && e.keyCode==79){ // 按 o
@@ -177,7 +191,7 @@ document.onkeydown=function(event){
           au.setAttribute("src","./assert/do,re/do.wav");  //设置需要读取的音频文件
           au.play();  //播放
           var imgcurr = document.getElementById("currentKey");
-          
+          arrs.push("do.wav");
         }
         if(e && e.keyCode==80){ // 按 p
           setcolor();
@@ -187,7 +201,7 @@ document.onkeydown=function(event){
           au.setAttribute("src","./assert/do,re/re.wav");
           au.play();
           var imgcurr = document.getElementById("currentKey");
-          
+          arrs.push("re.wav");
 
     }
     if(e && e.keyCode==81){ // 按 q
@@ -199,7 +213,7 @@ document.onkeydown=function(event){
       au.setAttribute("src","./assert/do,re/mi.wav");
       au.play();
       var imgcurr = document.getElementById("currentKey");
-   
+      arrs.push("mi.wav");
     }
     if(e && e.keyCode==82){ // 按 r
       setcolor();
@@ -210,7 +224,7 @@ document.onkeydown=function(event){
       au.setAttribute("src","./assert/do,re/fa.wav");
       au.play();
       var imgcurr = document.getElementById("currentKey");
-    
+      arrs.push("fa.wav");
     }
 
     if(e && e.keyCode==83){ // 按 s
@@ -222,7 +236,7 @@ document.onkeydown=function(event){
       au.setAttribute("src","./assert/do,re/so.wav");
       au.play();
       var imgcurr = document.getElementById("currentKey");
-   
+      arrs.push("so.wav");
     }
 
 
@@ -235,7 +249,7 @@ document.onkeydown=function(event){
       au.setAttribute("src","./assert/do,re/la.wav");
       au.play();
       var imgcurr = document.getElementById("currentKey");
-     
+      arrs.push("la.wav");
     }
     if(e && e.keyCode==85){ // 按 u
       setcolor();
@@ -246,7 +260,7 @@ document.onkeydown=function(event){
       au.setAttribute("src","./assert/do,re/si.wav");
       au.play();
       var imgcurr = document.getElementById("currentKey");
-    
+      arrs.push("si.wav");
     }
     if(e && e.keyCode==86){ // 按 v
       //要做的事情
@@ -256,7 +270,7 @@ document.onkeydown=function(event){
       au.setAttribute("src","./assert/do,re/do.wav");  //设置需要读取的音频文件
       au.play();  //播放
       var imgcurr = document.getElementById("currentKey");
-   
+      arrs.push("do.wav");
     }
     if(e && e.keyCode==87){ // 按 w
       setcolor();
@@ -266,7 +280,7 @@ document.onkeydown=function(event){
       au.setAttribute("src","./assert/do,re/re.wav");
       au.play();
       var imgcurr = document.getElementById("currentKey");
-      
+      arrs.push("re.wav");
 
 }
     if(e && e.keyCode==88){ // 按 x
@@ -278,7 +292,7 @@ document.onkeydown=function(event){
       au.setAttribute("src","./assert/do,re/mi.wav");
       au.play();
       var imgcurr = document.getElementById("currentKey");
-  
+      arrs.push("mi.wav");
     }
     if(e && e.keyCode==89){ // 按 y
         setcolor();
@@ -289,7 +303,7 @@ document.onkeydown=function(event){
         au.setAttribute("src","./assert/do,re/fa.wav");
         au.play();
         var imgcurr = document.getElementById("currentKey");
-      
+        arrs.push("fa.wav");
       }
 
       if(e && e.keyCode==90){ // 按 z
@@ -301,7 +315,7 @@ document.onkeydown=function(event){
         au.setAttribute("src","./assert/do,re/so.wav");
         au.play();
         var imgcurr = document.getElementById("currentKey");
-  
+        arrs.push("so.wav");
       }
       
     }; 
