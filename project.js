@@ -28,7 +28,7 @@ document.onkeydown=function(event){
             au.setAttribute("src","./assert/do,re/do.wav");  //设置需要读取的音频文件
             au.play();  //播放
             var imgcurr = document.getElementById("currentKey");
-           arrs.push("do.wav");
+           arrs.push("A.");
        
           }
           if(e && e.keyCode==66){ // 按 B
