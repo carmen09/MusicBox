@@ -25,10 +25,10 @@ document.onkeydown=function(event){
             setcolor();
             setcurrent("A");
             au.pause();  //暂停事件
-            au.setAttribute("src","./assert/do,re/do.wav");  //设置需要读取的音频文件
+            au.setAttribute("src","./assert/music/A.m4a");  //设置需要读取的音频文件
             au.play();  //播放
             var imgcurr = document.getElementById("currentKey");
-           arrs.push("A.");
+           arrs.push("A.m4a");
        
           }
           if(e && e.keyCode==66){ // 按 B
@@ -36,10 +36,10 @@ document.onkeydown=function(event){
             setcurrent("B");
             //严格来讲用FOR循环.
             au.pause();
-            au.setAttribute("src","./assert/do,re/re.wav");
+            au.setAttribute("src","./assert/music/B.m4a");
             au.play();
             var imgcurr = document.getElementById("currentKey");
-            arrs.push("re.wav");
+            arrs.push("B.m4a");
   
       }
           if(e && e.keyCode==67){ // 按 C
@@ -48,10 +48,10 @@ document.onkeydown=function(event){
             setcurrent("C");
             //严格来讲用FOR循环.
             au.pause();
-            au.setAttribute("src","./assert/do,re/mi.wav");
+            au.setAttribute("src","./assert/music/C.m4a");
             au.play();
             var imgcurr = document.getElementById("currentKey");
-            arrs.push("mi.wav");
+            arrs.push("C.m4a");
           }
           if(e && e.keyCode==68){ // 按 D
             setcolor();
@@ -59,10 +59,10 @@ document.onkeydown=function(event){
             setcurrent("D");
             //严格来讲用FOR循环.
             au.pause();
-            au.setAttribute("src","./assert/do,re/fa.wav");
+            au.setAttribute("src","./assert/music/D.m4a");
             au.play();
             var imgcurr = document.getElementById("currentKey");
-            arrs.push("fa.wav");
+            arrs.push("D.m4a");
             }
 
             if(e && e.keyCode==69){ // 按 E
@@ -71,10 +71,10 @@ document.onkeydown=function(event){
               setcurrent("E");
               //严格来讲用FOR循环.
               au.pause();
-              au.setAttribute("src","./assert/do,re/so.wav");
+              au.setAttribute("src","./assert/music/E.m4a");
               au.play();
               var imgcurr = document.getElementById("currentKey");
-              arrs.push("so.wav");
+              arrs.push("E.m4a");
             }
 
 
@@ -84,10 +84,10 @@ document.onkeydown=function(event){
               setcurrent("F");
               //严格来讲用FOR循环.
               au.pause();
-              au.setAttribute("src","./assert/do,re/la.wav");
+              au.setAttribute("src","./assert/music/F.m4a");
               au.play();
               var imgcurr = document.getElementById("currentKey");
-              arrs.push("la.wav");
+              arrs.push("F.m4a");
             }
             if(e && e.keyCode==71){ // 按 G
               setcolor();
@@ -95,227 +95,227 @@ document.onkeydown=function(event){
               setcurrent("G");
               //严格来讲用FOR循环.
               au.pause();
-              au.setAttribute("src","./assert/do,re/si.wav");
+              au.setAttribute("src","./assert/music/G.m4a");
               au.play();
               var imgcurr = document.getElementById("currentKey");
-              arrs.push("si.wav");
+              arrs.push("G.m4a");
             }
             if(e && e.keyCode==72){ // 按 H
               //要做的事情
               setcolor();
-              setcurrent("A");
+              setcurrent("H");
               au.pause();  //暂停事件
-              au.setAttribute("src","./assert/do,re/do.wav");  //设置需要读取的音频文件
+              au.setAttribute("src","./assert/music/H.m4a");  //设置需要读取的音频文件
               au.play();  //播放
               var imgcurr = document.getElementById("currentKey");
-              arrs.push("do.wav");
+              arrs.push("H.m4a");
             }
 
             if(e && e.keyCode==73){ // 按 I
               setcolor();
-              setcurrent("B");
+              setcurrent("I");
               //严格来讲用FOR循环.
               au.pause();
-              au.setAttribute("src","./assert/do,re/re.wav");
+              au.setAttribute("src","./assert/music/I.m4a");
               au.play();
               var imgcurr = document.getElementById("currentKey");
-              arrs.push("re.wav");
+              arrs.push("I.m4a");
               
         }
         if(e && e.keyCode==74){ // 按 J
           setcolor();
           //要做的事情
-          setcurrent("C");
+          setcurrent("J");
           //严格来讲用FOR循环.
           au.pause();
-          au.setAttribute("src","./assert/do,re/mi.wav");
+          au.setAttribute("src","./assert/music/J.m4a");
           au.play();
           var imgcurr = document.getElementById("currentKey");
-          arrs.push("mi.wav");
+          arrs.push("J.m4a");
         }
 
         if(e && e.keyCode==75){ // 按 K
           setcolor();
           //要做的事情
-          setcurrent("D");
+          setcurrent("K");
           //严格来讲用FOR循环.
           au.pause();
-          au.setAttribute("src","./assert/do,re/fa.wav");
+          au.setAttribute("src","./assert/music/K.m4a");
           au.play();
           var imgcurr = document.getElementById("currentKey");
-          arrs.push("fa.wav");
+          arrs.push("K.m4a");
         }
 
 
         if(e && e.keyCode==76){ // 按 L
           setcolor();
           //要做的事情
-          setcurrent("E");
+          setcurrent("L");
           //严格来讲用FOR循环.
           au.pause();
-          au.setAttribute("src","./assert/do,re/so.wav");
+          au.setAttribute("src","./assert/music/L.m4a");
           au.play();
           var imgcurr = document.getElementById("currentKey");
-          arrs.push("so.wav");
+          arrs.push("L.m4a");
         }
 
 
         if(e && e.keyCode==77){ // 按 M
           setcolor();
           //要做的事情
-          setcurrent("F");
+          setcurrent("M");
           //严格来讲用FOR循环.
           au.pause();
-          au.setAttribute("src","./assert/do,re/la.wav");
+          au.setAttribute("src","./assert/music/M.m4a");
           au.play();
           var imgcurr = document.getElementById("currentKey");
-          arrs.push("la.wav");
+          arrs.push("M.m4a");
         }
         if(e && e.keyCode==78){ // 按 N
           setcolor();
           //要做的事情
-          setcurrent("G");
+          setcurrent("N");
           //严格来讲用FOR循环.
           au.pause();
-          au.setAttribute("src","./assert/do,re/si.wav");
+          au.setAttribute("src","./assert/music/N.m4a");
           au.play();
           var imgcurr = document.getElementById("currentKey");
-          arrs.push("si.wav");
+          arrs.push("N.m4a");
         }
 
         if(e && e.keyCode==79){ // 按 o
           //要做的事情
           setcolor();
-          setcurrent("A");
+          setcurrent("O");
           au.pause();  //暂停事件
-          au.setAttribute("src","./assert/do,re/do.wav");  //设置需要读取的音频文件
+          au.setAttribute("src","./assert/music/O.m4a");  //设置需要读取的音频文件
           au.play();  //播放
           var imgcurr = document.getElementById("currentKey");
-          arrs.push("do.wav");
+          arrs.push("O.m4a");
         }
         if(e && e.keyCode==80){ // 按 p
           setcolor();
-          setcurrent("B");
+          setcurrent("P");
           //严格来讲用FOR循环.
           au.pause();
           au.setAttribute("src","./assert/do,re/re.wav");
           au.play();
           var imgcurr = document.getElementById("currentKey");
-          arrs.push("re.wav");
+          arrs.push("P.m4a");
 
     }
     if(e && e.keyCode==81){ // 按 q
       setcolor();
       //要做的事情
-      setcurrent("C");
+      setcurrent("Q");
       //严格来讲用FOR循环.
       au.pause();
-      au.setAttribute("src","./assert/do,re/mi.wav");
+      au.setAttribute("src","./assert/music/Q.m4a");
       au.play();
       var imgcurr = document.getElementById("currentKey");
-      arrs.push("mi.wav");
+      arrs.push("Q.m4a");
     }
     if(e && e.keyCode==82){ // 按 r
       setcolor();
       //要做的事情
-      setcurrent("D");
+      setcurrent("R");
       //严格来讲用FOR循环.
       au.pause();
-      au.setAttribute("src","./assert/do,re/fa.wav");
+      au.setAttribute("src","./assert/music/R.m4a");
       au.play();
       var imgcurr = document.getElementById("currentKey");
-      arrs.push("fa.wav");
+      arrs.push("R.m4a");
     }
 
     if(e && e.keyCode==83){ // 按 s
       setcolor();
       //要做的事情
-      setcurrent("E");
+      setcurrent("S");
       //严格来讲用FOR循环.
       au.pause();
-      au.setAttribute("src","./assert/do,re/so.wav");
+      au.setAttribute("src","./assert/music/S.m4a");
       au.play();
       var imgcurr = document.getElementById("currentKey");
-      arrs.push("so.wav");
+      arrs.push("S.m4a");
     }
 
 
     if(e && e.keyCode==84){ // 按 t
       setcolor();
       //要做的事情
-      setcurrent("F");
+      setcurrent("T");
       //严格来讲用FOR循环.
       au.pause();
-      au.setAttribute("src","./assert/do,re/la.wav");
+      au.setAttribute("src","./assert/music/T.m4a");
       au.play();
       var imgcurr = document.getElementById("currentKey");
-      arrs.push("la.wav");
+      arrs.push("T.m4a");
     }
     if(e && e.keyCode==85){ // 按 u
       setcolor();
       //要做的事情
-      setcurrent("G");
+      setcurrent("U");
       //严格来讲用FOR循环.
       au.pause();
-      au.setAttribute("src","./assert/do,re/si.wav");
+      au.setAttribute("src","./assert/music/U.m4a");
       au.play();
       var imgcurr = document.getElementById("currentKey");
-      arrs.push("si.wav");
+      arrs.push("U.m4a");
     }
     if(e && e.keyCode==86){ // 按 v
       //要做的事情
       setcolor();
-      setcurrent("A");
+      setcurrent("V");
       au.pause();  //暂停事件
-      au.setAttribute("src","./assert/do,re/do.wav");  //设置需要读取的音频文件
+      au.setAttribute("src","./assert/music/V.m4a");  //设置需要读取的音频文件
       au.play();  //播放
       var imgcurr = document.getElementById("currentKey");
-      arrs.push("do.wav");
+      arrs.push("V.m4a");
     }
     if(e && e.keyCode==87){ // 按 w
       setcolor();
-      setcurrent("B");
+      setcurrent("W");
       //严格来讲用FOR循环.
       au.pause();
-      au.setAttribute("src","./assert/do,re/re.wav");
+      au.setAttribute("src","./assert/music/W.m4a");
       au.play();
       var imgcurr = document.getElementById("currentKey");
-      arrs.push("re.wav");
+      arrs.push("W.m4a");
 
 }
     if(e && e.keyCode==88){ // 按 x
       setcolor();
       //要做的事情
-      setcurrent("C");
+      setcurrent("X");
       //严格来讲用FOR循环.
       au.pause();
-      au.setAttribute("src","./assert/do,re/mi.wav");
+      au.setAttribute("src","./assert/music/X.m4a");
       au.play();
       var imgcurr = document.getElementById("currentKey");
-      arrs.push("mi.wav");
+      arrs.push("X.m4a");
     }
     if(e && e.keyCode==89){ // 按 y
         setcolor();
         //要做的事情
-        setcurrent("D");
+        setcurrent("Y");
         //严格来讲用FOR循环.
         au.pause();
         au.setAttribute("src","./assert/do,re/fa.wav");
         au.play();
         var imgcurr = document.getElementById("currentKey");
-        arrs.push("fa.wav");
+        arrs.push("Y.m4a");
       }
 
       if(e && e.keyCode==90){ // 按 z
         setcolor();
         //要做的事情
-        setcurrent("E");
+        setcurrent("Z");
         //严格来讲用FOR循环.
         au.pause();
-        au.setAttribute("src","./assert/do,re/so.wav");
+        au.setAttribute("src","./assert/music/Z.m4a");
         au.play();
         var imgcurr = document.getElementById("currentKey");
-        arrs.push("so.wav");
+        arrs.push("Z.m4a");
       }
       
     }; 
